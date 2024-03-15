@@ -1,0 +1,1 @@
+const o="https://jsonplaceholder.typicode.com";function e(){const t=new URL("/posts",o);return fetch(t).then(n=>n.json())}function c(t){const n=new URL(`/posts/${t}/comments`,o);return fetch(n).then(s=>s.json())}export{c as a,e as g};
