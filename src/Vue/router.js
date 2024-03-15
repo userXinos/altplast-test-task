@@ -1,9 +1,9 @@
 import {createWebHistory, createRouter} from 'vue-router';
 
 const routes = [
-    {name: 'posts', path: '/', component: import('../pages/Posts.vue')},
-    {name: 'comments', path: '/comments/:postId', component: import('../pages/Comments.vue')},
-    {name: 'user', path: '/user/:id', component: import('../pages/User.vue')},
+    {name: 'posts', path: '/', component: () => import('../pages/Posts.vue')},
+    {name: 'comments', path: '/comments/:postId', component: () =>import('../pages/Comments.vue')},
+    {name: 'user', path: '/user/:id', component: () =>import('../pages/User.vue')},
 ];
 
 const router = createRouter({
