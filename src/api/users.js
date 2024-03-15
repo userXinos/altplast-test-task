@@ -3,7 +3,7 @@ const ENDPOINT = 'https://jsonplaceholder.typicode.com';
 /**
  *
  * @param {number|string} id
- * @return {Promise<any[]>}
+ * @return {Promise<Object>}
  */
 export function getUser(id) {
     const url = new URL(`/users/${id}`, ENDPOINT);
