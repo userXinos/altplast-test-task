@@ -1,7 +1,8 @@
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
+import {defineConfig} from 'vite';
+import vue from '@vitejs/plugin-vue';
 
-// https://vitejs.dev/config/
+const isDev = process.env.NODE_ENV === 'development';
 export default defineConfig({
-  plugins: [vue()],
-})
+    base: (isDev ? '/' : `/altplast-test-task/`),
+    plugins: [vue()],
+});
